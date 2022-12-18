@@ -13,11 +13,14 @@ int sum = 0;
 for (int i = 0; i <= n; i++)
 {
     int c = n % 10;
-    if ((N % c == 0) && (c != 0))
+    if (c!=0)
     {
-        sum = sum + c;
+        if (N%c==0)
+        {
+            sum = sum + c;
+        }
     }
-    if (c == 0)
+    else
     {
         Console.WriteLine("деление на ноль");
     }
